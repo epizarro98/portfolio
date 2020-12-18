@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from "../components/Home";
-import About from "../components/About";
-import Blog from "../components/Blog";
-import Projects from "../components/Projects";
+import Home from "./components/Home";
+import About from "./components/About";
+import Blog from "./components/Blog";
+import Projects from "./components/Projects";
 import {Route, Link} from 'react-router-dom'
-import Layout from '../components/common/Layout'
+import Layout from './components/common/Layout'
 
 
 // CSS imports
