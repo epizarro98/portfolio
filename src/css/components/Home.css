@@ -9,6 +9,7 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 }
 
 .name{
@@ -44,7 +45,15 @@ body{
     /* margin-top: 100px; */
 }
 
-.mail-direct-text{
+.smitty__img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+.mail-direct-text, .smitty-text{
     margin-left: 5vw;
     color: white;
     font-size: 20px;
@@ -77,23 +86,12 @@ body{
     color: white;
 }
 
-.whack__img {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
   .whack__img:hover, .whack__img:focus, .whack__img:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 
-  .mail__img {
+  .mail__img, .smitty__img, .whack__img {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -104,10 +102,15 @@ body{
     -webkit-transition-property: transform;
     transition-property: transform;
   }
-  .mail__img:hover, .mail__img:focus, .mail__img:active {
+   .mail__img:hover, .mail__img:focus, .mail__img:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+
+  .smitty__img:hover, .smitty__img:focus, .smitty__img:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  } 
 
 @media only screen and (max-width: 600px) {
     .project-container {
@@ -120,5 +123,9 @@ body{
     }
     .mail-direct-text{
         margin-left: 0;
+    }
+
+    .smitty__img{
+        margin-left: 0px;
     }
   }
