@@ -15,9 +15,9 @@ const App = () => {
     <div className="App">
       <nav class='nav'>
         <Link to='/'>Home</Link>{'   '}
-        <Link to='/About'>About</Link>{'   '}
+        <Link to='/About'>Contact</Link>{'   '}
         {/* <Link to='/Blog'>Blog</Link>{'   '} */}
-        <Link to='/Projects'>Projects</Link>{'   '}
+        {/* <Link to='/Projects'>Projects</Link>{'   '} */}
       </nav>
       <Layout>
         <Route path='/' exact component={Home} />

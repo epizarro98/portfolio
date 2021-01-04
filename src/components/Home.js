@@ -14,6 +14,9 @@ const mailLink = ()=>{
 const smittyLink = ()=>{
   window.location = "https://www.smittysgarageapparel.com/"
 }
+const valLink = ()=>{
+  window.location = "https://360virtualtourview.com/"
+}
 
 function Home() {
   const [ toggleImage, setToggleImage ] = useState(false);
@@ -36,12 +39,11 @@ function Home() {
 
     <div className='bio'>
       <p>
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br/>
-        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  <br/>
-        It has survived not only five centuries, but also the leap into electronic typesetting, remaining <br/>
-        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing<br/> 
-        rem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including <br/>
-        versions of Lorem Ipsum. scrambled it to make a type specimen book."
+        I am a software engineer who is a constant and curious learner.
+        With a 5 year background <br/>in metal fabrication, I understand the
+        importance of delivering a quality product to a customer.<br/> I am
+        fluent in many programming languages and thrive to deliver quality
+        products and learn on the way.
       </p>
     </div>
     <h3 className='project-text'>Projects</h3>
@@ -66,12 +68,21 @@ function Home() {
     </div>
 
     <div>
-    <img className='smitty__img'
-      onClick={smittyLink}
-      src='https://images.barrons.com/im-242220?width=620&size=1.5'
+      <img className='smitty__img'
+        onClick={smittyLink}
+        src='https://images.barrons.com/im-242220?width=620&size=1.5'
+        alt=''
+        />
+        <p className='val-text'>Smitty's Garage<br/>(Web Design)</p>
+    </div>
+
+    <div>
+    <img className='val__img'
+      onClick={valLink}
+      src='https://i2.wp.com/vrmatters.hk/wp-content/uploads/2017/07/pro2-matterport.jpg?fit=600%2C600'
       alt=''
       />
-      <p className='smitty-text'>Smitty's Garage</p>
+      <p className='val-text'>360 Virtual <br/>Tour View<br/>(Web Design)</p>
     </div>
   </div>
     </>

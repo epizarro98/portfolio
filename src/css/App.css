@@ -4,5 +4,6 @@
 
 .nav{
   background-color: rgb(133, 155, 169);
+  position: fixed;
+  top: 0;
 }
-
